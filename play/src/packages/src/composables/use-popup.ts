@@ -28,7 +28,6 @@ export const useUpdateUserInfoPopup = (
   const nickNameInputHandle = (e: any) => {
     const value = e.detail.value
     inputNickname.value = value
-    console.log(value)
     emits('update:nickname', value)
   }
 

@@ -53,7 +53,7 @@ export const useUpdateUserInfoPopup = (
     if (!inputNickname.value || !props.avatar) {
       return
     }
-    emits('confirm', inputNickname.value, props.avatar)
+    emits('confirm', props.avatar, inputNickname.value)
     emits('update:show', false)
   }
 
